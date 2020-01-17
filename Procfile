@@ -1,1 +1,1 @@
-web: gunicorn app:sentiment_app
+web: gunicorn sentiment_app:app
