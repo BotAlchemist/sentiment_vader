@@ -1,11 +1,8 @@
 from flask import Flask, render_template, request, url_for, redirect
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-try:
-    vader = SentimentIntensityAnalyzer()
-except:
-    import nltk
-    nltk.download('vader_lexicon')
+vader = SentimentIntensityAnalyzer()
+
 
 
 app= Flask(__name__)
