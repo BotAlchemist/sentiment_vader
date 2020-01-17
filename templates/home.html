@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> Sentiment Analyzer </title>
+</head>
+
+<body>
+<form action = "{{url_for('result')}}" method = "post">
+	<input type = "text" name = "text" placeholder = "Enter your text" required= "required">
+	<button type= "submit"> Check Sentiment </button>
+
+</form>
+
+
+{{sentiment_text}}
+<br>
+{{sentiment_result}}
+</body>
+</html>
