@@ -23,7 +23,7 @@ def result():
     negative_value = round(sentiment_result['neg']*100,2)
     neutral_value = round(sentiment_result['neu']*100,2)
     positive_value = round(sentiment_result['pos']*100,2)
-    compound_value = sentiment_result['compound']*100
+    compound_value = sentiment_result['compound']
     if compound_value >= 0.05:
         overall_value= "Positive"
     elif compound_value <= -0.05:
